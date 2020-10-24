@@ -12,10 +12,7 @@ def print_field():
   for i in range(0, 3):
     row = str(i)
     for j in range(0, 3):
-      if (j, i) in moves:
-        row += " " + moves[(j, i)]
-      else:
-        row += " -"
+      row += " " + moves[(j, i)]
     print(row)
 
 def game_check():
